@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>membership</title>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+  <header>
+    <button class="HomeBtn"><a href="../index.html">< Home</a></button>
+    <h1><a href="../index.html">Dahong Academy</a></h1>
+  </header>
+  <section>
+    <section id="container">
+     <h1><img width="48" height="48" src="https://img.icons8.com/fluency/48/strawberry.png" alt="strawberry" id="straw3">회원가입</h1>
+      <div>
+        <p>아이디</p>
+        <input type="text" name="userId" id="userId">
+        <p>비밀번호</p>
+        <div class="input1">
+          <input type="password" name="password">
+          <div class="icon1"><img src="./images/img1.png" alt=""></div>
+        </div>
+        <p>비밀번호 재확인</p>
+        <div class="input2">
+          <input type="password" name="passwordAgain">
+          <div class="icon2"><img src="./images/img2.png" alt=""></div>
+        </div>
+      </div>
+      <section>
+        <p>이름</p>
+        <input type="text" name="name">
+        <p>생년월일</p>
+        <div id="ymd" class="clearFix">
+            <input type="text" id="year" class="i" placeholder="년(4자)">
+              <select name="month" id="month" class="i">
+                  <option selected disabled>월</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+              </select>
+              <input type="text" id="date" class="i" placeholder="일">
+        </div>
+            <p>성별</p>
+              <select id="s1">
+                <option selected disabled>성별</option>
+                <option value="남자">남자</option>
+                <option value="여자">여자</option>
+              </select>
+            <p>본인 확인 이메일<span id="m">(선택)</span></p>
+            <div class="clearFix">
+              <input type="text" id="mail1" placeholder="선택입력">
+              <p id="mail2">@</p>
+              <select name="e-mail" id="mail3">
+                  <option selected disabled>이메일 주소 선택</option>
+                  <option>naver.com</option>
+                  <option>gmail.com</option>
+                  <option>hotmail.com</option>
+                  <option>hanmail.net</option>
+                  <option>직접입력</option>
+              </select>
+            </div>
+            <p>휴대전화</p>
+            <select name="phoneNumber" class="p1">
+                <option selected>대한민국 +82</option>
+                <option>미국/캐나다 +1</option>
+                <option>프랑스 +33</option>
+                <option>독일 +49</option>
+                <option>일본 +81</option>
+                <option>중국 +86</option>
+            
+            </select>
+            <div>
+              <input type="text" name="phoneNumber" id="nwrite1" placeholder="전화번호 입력">
+              <button type="text" id="nwrite2">인증번호 받기</button>
+            </div>
+            <div><input type="text" placeholder="인증번호를 입력하세요"></div>      
+          </section>
+          <button type="submit" name="signIn" class="btn">가입하기</button>
+      </section>
+      </section>
+    <section class="bottom">
+      <a href="#">이용약관</a>
+      <a href="#"><span>개인정보처리방침</span></a>
+      <a href="#">책임의 한계와 법적고지</a>
+      <a href="#">회원정보 고객센터</a>
+    </section>  
+  <footer>
+    <section class="copyright">
+      <p>Dahong Academy</p>
+      <small><span>2024 Dahong Academy © copyright all right reserved.</span></small>
+    </section>
+  </footer>
+  <script>
+     
+     $(function(){
+        $('.curser2').mouseover(function(){
+          $('.curser111').css('display','block');
+        });
+        $('.curser2').mouseleave(function(){
+          $('.curser2').css('display','block');
+          $('.curser111').css('display','none');
+        });
+
+    });
+
+
+  </script>
+</body>
+</html>
