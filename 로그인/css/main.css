@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+/* reset */
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+body {font-size: 12px '돋움',dotum, sans-serif; color:#333; letter-spacing: 1.3px;}
+/* common */
+.clearFix::after {
+  content:'';
+  display: block;
+  clear: both;
+}
+.inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+body {font-family: "IBM Plex Sans KR", sans-serif; background-color: #fff6fd; }
+
+/* homeBtn */
+.HomeBtn {width: 80px; position: absolute; z-index: 9999; left: 30%; top: 5%; border: none; padding: 10px; border-radius: 10px; background-color: #B2A5FF; color: #fff; cursor: pointer;}
+.HomeBtn a {font-family: "Noto Sans KR", serif; border-bottom: none; color: #fff;}
+/* ------------------header----------------- */
+header {}
+header h1 {
+  height: 100px;
+  padding-top:40px; 
+  text-align:center; line-height: 100px;
+}
+header h1 a {
+  color:#F34C3F; 
+  border-bottom: 1px dashed #97010E; 
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+  font-weight: 700;
+}
+
+#container {
+  position: relative;
+  width: 100%; height: 600px; 
+}
+
+#container ul {}
+#container li>h1 {
+  text-align: center;
+  padding : 0 0 20px;
+  color:#5a6b5d;
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Poor Story", system-ui; font-weight: 600;
+ }
+ #container #straw3 {margin-left:-20px}
+
+#container ul#login {
+  position: absolute;
+  top:7%;
+  left:50%;
+  transform: translate(-50%, 0);
+  width: 400px; height: 490px; 
+  padding: 20px;
+  margin: 0 auto;
+  background: rgba(252, 178, 173, 0.8); border-radius: 50px;
+  box-shadow: 5px 5px 10px #828181;
+}
+#container input {width: 380px; height: 60px; 
+background:rgba(255,255,255,0.8);
+position: relative;
+left:10px
+}
+#container input.write {
+  border: none; border-bottom:1px solid #97010E;
+  padding: 0 10px; box-sizing: border-box;
+}
+
+#container input#chk {
+  width:15px; height: 15px; 
+  margin: 10px 15px 10px 0;
+  border-radius: 60%;
+  appearance: none;
+  border: 1px solid #97010E;
+}
+#container input#chk:checked {
+  background: #97010E;
+}
+#container ul>li>label {
+  font-size: 13px; 
+  vertical-align: 13px;
+}
+
+  #container input:checked[type="checkbox"]{
+    background: #000;
+  }
+
+  #container ul>li.logbtn {
+    width: 380px; height: 50px;
+    position: relative;
+    left:10px;
+    text-align: center; 
+    line-height: 50px;
+    border-radius: 100px;
+  }
+  #container ul>li.log1 {background: #F34C3F; cursor: pointer;}
+  #container ul>li.log1:hover, .log2:hover, .in>a:hover {box-shadow: 2px 2px 4px #524e4e;}
+  #container ul>li.log1 a {color:aliceblue;}
+  #container ul>li.log2 {background: #5A6B5D; cursor: pointer;}
+  #container ul>li.log2 a {color:aliceblue;}
+
+  #container ul>li.or {display: flex; width: 380px; height: 40px; align-items: center; line-height: 30px; font-size: 14px; color:#504f4f; position: relative; left:10px;}
+  #container ul>li.or::before {content: ''; flex-grow: 1; height: 1px; font-size: 0px; background: rgb(124, 120, 120);}
+  #container ul>li.or::after {content: ''; flex-grow: 1; height: 1px; font-size: 0px; background: rgb(124, 120, 120)}
+
+  #container div#plus {margin:70px 0;}
+  #container div>.in {float:left; padding-left:8px; }
+  #container div>.in a {
+    padding:6px 20px; 
+    background: #97010E; 
+    border-radius: 80px;
+    color:aliceblue;
+    position: relative;
+  }
+
+  #container .find {position: absolute; right: 30px;}
+  #container .find a {margin:2px}
+  #container .findid {float:left; padding-right: 10px;}
+  #container .findpw {float:left; padding-left: 10px; border-left: 1px solid #97010E;}
+  #container .findid:hover a, .findpw:hover a {background: rgba(240, 76, 64, 0.5);}
+
+  footer { position: relative;}
+  footer div#boxf {max-width: 700px; height: 100px;  margin-top: 30px;}
+  footer #boxf p {
+    display: inline-block;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-right: 1px solid #97010E;
+    }
+  footer #boxf p:last-child {border-right: none;}
+  footer #subbox p select option {font-size: 15px;}
+  footer #subbox p {font-size: 15px;}
+  footer #subbox span {font-weight: 600;}
+  footer #subbox #lang { width: 100px; height: 25px; line-height: 25px;}
+
